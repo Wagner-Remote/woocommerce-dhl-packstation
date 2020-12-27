@@ -11,11 +11,9 @@ function tim_packstation_finder_ajax() {
 	$zip = intval( $_POST['zip'] );
 
     $userName = 'wagnerremote';
-	//$userName = 'woopackstationaddon_1';
-	$password = 'R$CZ9RwHdnHmd_4';
-    //$password = '8ujnX6BMprzSV4Bve6VKlpQ51RouFq';
+    $password = 'R$CZ9RwHdnHmd_4';
     $endpoint = 'https://cig.dhl.de/services/sandbox/soap';
-	//$endpoint = 'https://cig.dhl.de/services/production/soap';
+    //$endpoint = 'https://cig.dhl.de/services/production/soap';
 	
     $client = new SoapClient("https://cig.dhl.de/cig-wsdls/com/dpdhl/wsdl/standortsuche-api/1.0/standortsuche-api-1.0.wsdl", [
         'login' => $userName,
